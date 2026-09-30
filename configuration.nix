@@ -11,6 +11,8 @@
     useOSProber = true;
   };
   
+  boot.kernelParams = [ "pcie_aspm=off" ];
+ 
   zramSwap.enable = true;
    
   swapDevices = [
