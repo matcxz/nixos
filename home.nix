@@ -42,11 +42,11 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake /home/matheus/nixos#nixos";
-      update = "sudo nix flake update --flake /home/matheus/nixos";
-      editos = "vim /home/matheus/nixos/configuration.nix";
-      editflake = "vim /home/matheus/nixos/flake.nix";
-      edithome = "vim /home/matheus/nixos/home.nix";
+      nixos-switch = "sudo nixos-rebuild switch --flake /home/matheus/nixos#nixos";
+      nixos-update = "sudo nix flake update --flake /home/matheus/nixos";
+      nix-edit = "vim /home/matheus/nixos/configuration.nix";
+      flake-edit = "vim /home/matheus/nixos/flake.nix";
+      home-edit = "vim /home/matheus/nixos/home.nix";
     };
   };
 
