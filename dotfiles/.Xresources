@@ -1,0 +1,42 @@
+!st.font: JetBrainsMono Nerd Font Mono:size=11
+!st.font2: Noto Color Emoji:pixelsize=11:antialias=true:autohint=false
+
+st.background: #1e1e2e
+st.foreground: #cdd6f4
+st.cursorColor: #f5e0dc
+
+! black
+st.color0: #45475a
+st.color8: #585b70
+
+! red
+st.color1: #f38ba8
+st.color9: #f38ba8
+
+! green
+st.color2: #a6e3a1
+st.color10: #a6e3a1
+
+! yellow
+st.color3: #f9e2af
+st.color11: #f9e2af
+
+! blue
+st.color4: #89b4fa
+st.color12: #89b4fa
+
+! magenta
+st.color5: #f5c2e7
+st.color13: #f5c2e7
+
+! cyan
+st.color6: #94e2d5
+st.color14: #94e2d5
+
+! white
+st.color7: #bac2de
+st.color15: #a6adc8
+
+! cursor
+Xcursor.theme: Bibata-Modern-Classic
+Xcursor.size: 16
