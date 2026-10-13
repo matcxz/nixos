@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   xsession.windowManager.i3 = {
@@ -7,7 +7,7 @@
     config = {
       modifier = "Mod4";
       terminal = "alacritty";
-      menu = "dmenu_run -l 4";
+      menu = "rofi -show drun";
 
       gaps = {
         inner = 10;
@@ -26,8 +26,13 @@
 
       startup = [
         {
-          command = "nitrogen --restore";
-          always = true;
+          command = "${pkgs.feh}/bin/feh --bg-fill ~/wallpapers/34.jpg";
+          always = false;
+          notification = false;
+        }
+        {
+          command = "${pkgs.xset}/bin/xset r rate 200 35 &";
+          always = false;
           notification = false;
         }
       ];

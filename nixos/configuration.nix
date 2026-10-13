@@ -61,11 +61,9 @@
     xkb.layout = "br";
     xkb.variant = "abnt2";
     windowManager.i3.enable = true;
-    displayManager.lightdm.enable = true;
-    displayManager.sessionCommands = ''
-      ${pkgs.xset}/bin/xset r rate 200 35 &
-    '';
   };
+  
+  services.displayManager.ly.enable = true;
 
   security.rtkit.enable = true;
 

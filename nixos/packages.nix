@@ -12,6 +12,7 @@
     # CLI
     vim
     fastfetch
+    pfetch
     wget
     stow
     tmux
@@ -24,7 +25,6 @@
     yt-dlp
    
     # GUI Utils
-    nitrogen
     xclip
     xfce4-screenshooter
    
