@@ -24,7 +24,7 @@
     yt-dlp
    
     # GUI Utils
-    feh
+    nitrogen
     xclip
     xfce4-screenshooter
    
