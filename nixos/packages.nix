@@ -12,7 +12,6 @@
     # CLI
     vim
     fastfetch
-    neofetch
     wget
     stow
     tmux
