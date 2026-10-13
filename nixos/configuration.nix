@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./packages.nix
   ];
 
   boot.loader.grub = {
@@ -79,15 +80,6 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ];
   };
-
-  environment.systemPackages = with pkgs; [
-    vim
-    fastfetch
-    wget
-    stow
-    tmux
-    neovim
-  ];
 
   services.keyd = {
     enable = true;
