@@ -21,7 +21,7 @@
       
       floating = {
         titlebar = false;
-        border = 2 
+        border = 2;
       };
 
       startup = [
