@@ -40,7 +40,7 @@
     gnumake
     gcc
     nodejs
-    python
+    python3
 
     # Fonts
     nerd-fonts.jetbrains-mono
