@@ -23,6 +23,8 @@
     unzip
     cava
     yt-dlp
+    tree
+    zoxide
    
     # GUI Utils
     xclip

@@ -10,4 +10,8 @@
       edit-flake = "vim ~/nix/flake.nix";
     };
   };
+ 
+  programs.zoxide = {
+    enable = true;
+  };
 }
