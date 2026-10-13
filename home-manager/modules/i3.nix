@@ -5,6 +5,7 @@
     enable = true;
 
     config = {
+      defaultWorkspace = "workspace number 1";
       modifier = "Mod4";
       terminal = "alacritty";
       menu = "rofi -show drun";
@@ -22,6 +23,14 @@
       floating = {
         titlebar = false;
         border = 2;
+      };
+      
+      fonts = {
+        names = [
+          "JetbrainsMono Nerd Font"
+          "Noto Color Emoji"
+        ];
+        size = 10.0;
       };
 
       startup = [
