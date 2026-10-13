@@ -4,6 +4,7 @@
   imports = [
     ./modules/git.nix
     ./modules/bash.nix
+    ./modules/i3.nix
   ];
 
   home.username = "matheus";
