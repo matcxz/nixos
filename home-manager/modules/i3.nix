@@ -25,6 +25,8 @@
         border = 2;
       };
       
+      bars = [];
+      
       fonts = {
         names = [
           "JetbrainsMono Nerd Font"
@@ -37,6 +39,11 @@
         {
           command = "${pkgs.feh}/bin/feh --bg-fill ~/wallpapers/34.jpg";
           always = false;
+          notification = false;
+        }
+        {
+          command = "polybar main";
+          always = true;
           notification = false;
         }
         {
