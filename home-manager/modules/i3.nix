@@ -14,6 +14,16 @@
         outer = 5;
       };
       
+      window = {
+        titlebar = false;
+        border = 2;
+      };
+      
+      floating = {
+        titlebar = false;
+        border = 2 
+      };
+
       startup = [
         {
           command = "nitrogen --restore";
