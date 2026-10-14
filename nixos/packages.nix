@@ -29,7 +29,6 @@
     # GUI Utils
     xclip
     xfce4-screenshooter
-    lxappearance
    
     # WMs
     feh
@@ -38,6 +37,7 @@
     rofi
     i3status
     i3lock
+    papirus-icon-theme
 
     # Programming
     gnumake
