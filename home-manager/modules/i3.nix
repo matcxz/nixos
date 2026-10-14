@@ -43,7 +43,7 @@
         }
         {
           command = "polybar main";
-          always = true;
+          always = false;
           notification = false;
         }
         {
