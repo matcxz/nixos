@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -28,7 +28,11 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "backup";
-    users.matheus = import ../home-manager/home.nix;
+    
+    users.matheus.imports = [
+      inputs.nvf.homeManagerModules.default
+      ../home-manager/home.nix
+    ];
   };
 
   networking.networkmanager.enable = true;

@@ -42,6 +42,11 @@
     i3lock
     papirus-icon-theme
     gnome-themes-extra
+    
+    # Sound
+    pipewire
+    pulseaudio
+    pamixer
 
     # Programming
     gnumake
