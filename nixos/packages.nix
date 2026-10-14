@@ -43,8 +43,9 @@
     gcc
     nodejs
     python3
-
-    # Fonts
+  ];
+  
+  fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.caskaydia-cove
     nerd-fonts.iosevka
