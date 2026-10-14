@@ -66,6 +66,8 @@
   services.displayManager.ly.enable = true;
 
   security.rtkit.enable = true;
+  
+  security.polkit.enable = true;
 
   services.pipewire = {
     enable = true;

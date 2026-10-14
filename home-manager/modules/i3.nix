@@ -51,6 +51,11 @@
           always = false;
           notification = false;
         }
+        {
+          command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+          always = false;
+          notification = false;
+        }
       ];
     };
   };

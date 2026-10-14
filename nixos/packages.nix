@@ -29,6 +29,7 @@
     # GUI Utils
     xclip
     xfce4-screenshooter
+    polkit_gnome
    
     # WMs
     feh
