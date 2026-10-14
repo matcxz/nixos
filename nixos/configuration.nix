@@ -69,6 +69,10 @@
   
   security.polkit.enable = true;
 
+  services.dbus.enable = true;
+  
+  programs.dconf.enable = true;
+ 
   services.pipewire = {
     enable = true;
     pulse.enable = true;
