@@ -64,13 +64,22 @@
   
   services.displayManager.ly.enable = true;
 
-  security.rtkit.enable = true;
-  
+  security.rtkit.enable = true; 
   security.polkit.enable = true;
-
   services.dbus.enable = true;
-  
   programs.dconf.enable = true;
+
+  programs.thunar = {
+    enable = true;
+    plugins = with pkgs; [
+      thunar-volman
+      thunar-archive-plugin
+    ];    
+  };
+ 
+  programs.xfconf.enable = true;
+  services.gvfs.enable = true;
+  services.tumbler.enable = true;
  
   services.pipewire = {
     enable = true;

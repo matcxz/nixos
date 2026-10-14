@@ -5,7 +5,6 @@
     # Desktop
     firefox
     alacritty
-    thunar
     mpv
     gparted
 
@@ -30,6 +29,9 @@
     xclip
     xfce4-screenshooter
     polkit_gnome
+    file-roller
+    ffmegthumbnailer
+    poppler-utils
    
     # WMs
     feh
