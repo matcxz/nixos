@@ -7,5 +7,6 @@
     ./i3.nix
     ./polybar.nix
     ./gtk.nix
+    ./rofi.nix
   ];
 }
