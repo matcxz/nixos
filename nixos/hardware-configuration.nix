@@ -8,14 +8,14 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "uhci_hcd" "ehci_pci" "ahci" "sd_mod" "sdhci_pci" ];
+  boot.initrd.availableKernelModules = [ "uhci_hcd" "ehci_pci" "ahci" "usb_storage" "sd_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/b4f398e0-5d57-4092-83da-53e100f376c7";
-      fsType = "ext4";
+    { device = "/dev/disk/by-uuid/b27f46d8-57e0-4fe5-ba4a-5120878dd3aa";
+      fsType = "btrfs";
     };
 
   swapDevices = [ ];
