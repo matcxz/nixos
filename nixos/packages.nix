@@ -43,6 +43,9 @@
     gcc
     nodejs
     python3
+    
+    # Other
+    home-manager
   ];
   
   fonts.packages = with pkgs; [
