@@ -29,7 +29,7 @@
     xclip
     xfce4-screenshooter
     polkit_gnome
-    file-roller
+    xarchiver
     ffmpegthumbnailer
     poppler-utils
    
