@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  wallpaper = ../wallpapers/34.jpg;
+in
 {
   xsession.windowManager.i3 = {
     enable = true;
@@ -37,7 +40,7 @@
 
       startup = [
         {
-          command = "${pkgs.feh}/bin/feh --bg-fill ~/wallpapers/34.jpg";
+          command = "${pkgs.feh}/bin/feh --bg-fill ${wallpaper}";
           always = false;
           notification = false;
         }
