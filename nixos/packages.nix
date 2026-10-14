@@ -38,6 +38,7 @@
     i3status
     i3lock
     papirus-icon-theme
+    gnome-themes-extra
 
     # Programming
     gnumake

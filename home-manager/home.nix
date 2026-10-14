@@ -2,10 +2,7 @@
 
 {
   imports = [
-    ./modules/git.nix
-    ./modules/bash.nix
-    ./modules/i3.nix
-    ./modules/polybar.nix
+    ./modules/bundle.nix
   ];
 
   home.username = "matheus";
