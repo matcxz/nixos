@@ -8,5 +8,6 @@
     ./polybar.nix
     ./gtk.nix
     ./rofi.nix
+    ./nvf/nvf.nix
   ];
 }
