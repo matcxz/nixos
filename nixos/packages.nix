@@ -30,7 +30,7 @@
     xfce4-screenshooter
     polkit_gnome
     file-roller
-    ffmegthumbnailer
+    ffmpegthumbnailer
     poppler-utils
    
     # WMs
