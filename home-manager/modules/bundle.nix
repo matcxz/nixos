@@ -10,5 +10,6 @@
     ./rofi.nix
     ./nvf/nvf.nix
     ./alacritty.nix
+    ./xresources.nix
   ];
 }

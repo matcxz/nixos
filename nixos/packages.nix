@@ -42,6 +42,19 @@
     i3lock
     papirus-icon-theme
     gnome-themes-extra
+ 
+    
+    # st
+    (st.overrideAttrs (oldAttrs: {
+      src = fetchFromGitHub {
+        owner = "matcxz";
+        repo = "st";
+        rev = "548c55804aa9779ad9c884e5d0b2fbf9c3e40b02";
+        hash = "sha256-WSN2+29GXadeBShf2y6RcVpPbXjjd0vNSBc1VKjAMXI=";
+      };
+
+      buildInputs = oldAttrs.buildInputs ++ [ harfbuzz ];
+    }))
     
     # Sound
     pipewire
