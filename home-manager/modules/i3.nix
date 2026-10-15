@@ -41,7 +41,7 @@ in
       startup = [
         {
           command = "${pkgs.feh}/bin/feh --bg-fill ${wallpaper}";
-          always = false;
+          always = true;
           notification = false;
         }
         {
@@ -57,6 +57,11 @@ in
         {
           command = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
           always = false;
+          notification = false;
+        }
+        {
+          command = "${pkgs.xrdb}/bin/xrdb -merge ~/.Xresources";
+          always = true;
           notification = false;
         }
       ];
