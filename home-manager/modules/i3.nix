@@ -10,7 +10,7 @@ in
     config = {
       defaultWorkspace = "workspace number 1";
       modifier = "Mod4";
-      terminal = "alacritty";
+      terminal = "st";
       menu = "rofi -show drun";
 
       gaps = {
