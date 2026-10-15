@@ -66,6 +66,7 @@
     gcc
     nodejs
     python3
+    uv
     
     # Other
     home-manager
