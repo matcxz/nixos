@@ -1,8 +1,6 @@
 { ... }:
 
 {
-  home.sessionVariables.MANPAGER2 = "less --use-color -Dd+y -Du+208";
-
   programs.bash = {
     enable = true;
     shellAliases = {
