@@ -70,7 +70,7 @@
 
     # Other
     home-manager
-    man-pages-poxis
+    man-pages-posix
     man-pages
   ];
 
