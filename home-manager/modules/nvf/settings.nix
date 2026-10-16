@@ -6,7 +6,7 @@
     number = true;
     relativenumber = true;
     cursorline = true;
-    wrap = false;
+    wrap = true;
     tabstop = 2;
     shiftwidth = 2;
     expandtab = true;
@@ -39,8 +39,8 @@
 
         completion = {
           menu.auto_show = true;
-          documentation.auto_show = true;
-          ghost_text.enabled = true;
+          documentation.auto_show = false;
+          ghost_text.enabled = false;
         };
 
         signature.enabled = true;
