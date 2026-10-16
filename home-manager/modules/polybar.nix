@@ -39,7 +39,7 @@ in
         "font-0" = "JetBrainsMono Nerd Font:size=9;2";
 
         modules-left = "xworkspaces";
-        modules-right = "memory cpu pulseaudio date";
+        modules-right = "memory cpu volume date";
 
         cursor-click = "pointer";
         cursor-scroll = "ns-resize";
@@ -69,8 +69,8 @@ in
         label-empty-padding = 1;
       };
 
-      "module/pulseaudio" = {
-        type = "internal/pulseaudio";
+      "module/volume" = {
+        type = "internal/alsa";
 
         "format-volume-prefix" = "󰕾 ";
         "format-volume-prefix-foreground" = colors.primary;

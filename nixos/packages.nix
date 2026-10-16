@@ -24,7 +24,7 @@
     yt-dlp
     tree
     zoxide
-   
+
     # GUI Utils
     xclip
     xfce4-screenshooter
@@ -32,7 +32,7 @@
     xarchiver
     ffmpegthumbnailer
     poppler-utils
-   
+
     # WMs
     feh
     dmenu
@@ -42,8 +42,7 @@
     i3lock
     papirus-icon-theme
     gnome-themes-extra
- 
-    
+
     # st
     (st.overrideAttrs (oldAttrs: {
       src = fetchFromGitHub {
@@ -55,7 +54,7 @@
 
       buildInputs = oldAttrs.buildInputs ++ [ harfbuzz ];
     }))
-    
+
     # Sound
     pipewire
     pulseaudio
@@ -67,11 +66,11 @@
     nodejs
     python3
     uv
-    
+
     # Other
     home-manager
   ];
-  
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.caskaydia-cove
