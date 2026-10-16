@@ -10,11 +10,18 @@
       ls = "eza --color always";
       la = "eza -a --color always";
       l = "eza -lah --color always";
+      cat = "bat";
       fast = "fastfetch";
     };
   };
 
   programs.zoxide.enable = true;
   programs.eza.enable = true;
-
+  programs.bat = {
+    enable = true;
+    config = {
+      theme = "tokyonight_night";
+      paging = "never";
+    };
+  };
 }
