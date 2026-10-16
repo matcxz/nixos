@@ -1,6 +1,6 @@
 {
   viAlias = false;
-  vimAlias = false;
+  vimAlias = true;
 
   options = {
     number = true;
@@ -19,8 +19,8 @@
 
   theme = {
     enable = true;
-    name = "catppuccin";
-    style = "mocha";
+    name = "tokyonight";
+    style = "night";
     transparent = false;
   };
 
