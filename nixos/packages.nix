@@ -7,6 +7,7 @@
     alacritty
     mpv
     gparted
+    keepassxc
 
     # CLI
     vim
@@ -69,6 +70,8 @@
 
     # Other
     home-manager
+    man-pages-poxis
+    man-pages
   ];
 
   fonts.packages = with pkgs; [
