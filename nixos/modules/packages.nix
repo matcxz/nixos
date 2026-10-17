@@ -25,6 +25,7 @@
     yt-dlp
     tree
     zoxide
+    unrar
 
     # GUI Utils
     xclip

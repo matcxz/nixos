@@ -12,5 +12,13 @@
     };
   };
 
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    openFirewall = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      MaxAuthTries = 3;
+    };
+  };
 }
