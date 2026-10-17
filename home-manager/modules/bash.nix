@@ -19,9 +19,6 @@
   programs.eza.enable = true;
   programs.bat = {
     enable = true;
-    config = {
-      theme = "tokyonight_night";
-      paging = "never";
-    };
+    config.paging = "never";
   };
 }
