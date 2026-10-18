@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   boot.loader.grub = {
@@ -7,6 +7,7 @@
     useOSProber = true;
   };
 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelParams = [ "pcie_aspm=off" ];
 
   swapDevices = [
