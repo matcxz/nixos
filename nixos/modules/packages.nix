@@ -25,13 +25,12 @@
     yt-dlp
     tree
     zoxide
-    unrar
 
     # GUI Utils
     xclip
     xfce4-screenshooter
     polkit_gnome
-    xarchiver
+    file-roller
     ffmpegthumbnailer
     poppler-utils
 
