@@ -4,8 +4,8 @@
   imports = [
     ./git.nix
     ./bash.nix
-    ./i3.nix
-    ./polybar.nix
+    ./wms/i3.nix
+    ./wms/polybar.nix
     ./gtk.nix
     ./rofi.nix
     ./nvf/nvf.nix
