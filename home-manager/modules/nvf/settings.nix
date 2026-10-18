@@ -26,7 +26,7 @@
 
   lsp = {
     enable = true;
-    formatOnSave = true;
+    formatOnSave = false;
   };
 
   autocomplete = {
