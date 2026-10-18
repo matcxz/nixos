@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   wallpaper = ../wallpapers/34.jpg;
@@ -17,19 +17,19 @@ in
         inner = 10;
         outer = 5;
       };
-      
+
       window = {
         titlebar = false;
         border = 2;
       };
-      
+
       floating = {
         titlebar = false;
         border = 2;
       };
-      
-      bars = [];
-      
+
+      bars = [ ];
+
       fonts = {
         names = [
           "JetbrainsMono Nerd Font"
