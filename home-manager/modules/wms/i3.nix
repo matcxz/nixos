@@ -14,8 +14,8 @@ in
       menu = "rofi -show drun";
 
       gaps = {
-        inner = 10;
-        outer = 5;
+        inner = 8;
+        outer = 4;
       };
 
       window = {
