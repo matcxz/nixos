@@ -3,14 +3,13 @@
 {
   services.xserver = {
     enable = true;
-    xkb = {
-      layout = "br";
-      variant = "abnt2";
-    };
-    windowManager.i3.enable = true;
-  };
 
-  services.displayManager.ly.enable = true;
+    xkb.layout = "br";
+    xkb.variant = "abnt2";
+
+    windowManager.i3.enable = true;
+    displayManager.lightdm.enable = true;
+  };
 
   programs.dconf.enable = true;
 
