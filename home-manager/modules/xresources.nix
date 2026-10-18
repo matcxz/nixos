@@ -4,10 +4,9 @@
   xresources.properties = {
     "st.borderpx" = "7";
 
-    "st.background" = "#000000";
-    "st.foreground" = "#e5e5e5";
+    "st.foreground" = "#c0caf5";
+    "st.background" = "#1a1b26";
     "st.cursorColor" = "#cccccc";
-    "st.reverseVideo" = "false";
 
     "st.color0" = "#15161e";
     "st.color1" = "#f7768e";
