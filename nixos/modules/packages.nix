@@ -8,6 +8,7 @@
     mpv
     gparted
     keepassxc
+    obsidian
 
     # CLI
     vim
