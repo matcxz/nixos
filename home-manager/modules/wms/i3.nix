@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  wallpaper = ../wallpapers/34.jpg;
+  wallpaper = ../../wallpapers/34.jpg;
 in
 {
   xsession.windowManager.i3 = {
