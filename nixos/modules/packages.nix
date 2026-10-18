@@ -9,12 +9,14 @@
     gparted
     keepassxc
     obsidian
+    virt-manager
 
     # CLI
     vim
     fastfetch
     pfetch
     wget
+    btop
     stow
     tmux
     neovim
@@ -73,6 +75,7 @@
     home-manager
     man-pages-posix
     man-pages
+    qemu
   ];
 
   fonts.packages = with pkgs; [

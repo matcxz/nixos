@@ -30,6 +30,8 @@
     keyMap = "br-abnt2";
   };
 
+  virtualisation.libvirtd.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "26.05";
