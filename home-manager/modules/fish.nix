@@ -13,6 +13,10 @@
       cat = "bat";
       fast = "fastfetch";
     };
+
+    interactiveShellInit = ''
+      set fish_greeting
+    '';
   };
 
   programs.zoxide = {
