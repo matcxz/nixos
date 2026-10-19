@@ -11,5 +11,6 @@
     ./nvf/nvf.nix
     ./alacritty.nix
     ./xresources.nix
+    ./starship.nix
   ];
 }
