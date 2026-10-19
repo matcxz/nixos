@@ -3,6 +3,7 @@
 {
   security.polkit.enable = true;
   services.dbus.enable = true;
+  services.guix.enable = true;
 
   services.keyd = {
     enable = true;
