@@ -3,7 +3,7 @@
 {
   imports = [
     ./git.nix
-    ./bash.nix
+    ./fish.nix
     ./wms/i3.nix
     ./wms/polybar.nix
     ./gtk.nix

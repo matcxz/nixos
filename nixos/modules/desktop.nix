@@ -13,6 +13,8 @@
 
   programs.dconf.enable = true;
 
+  programs.fish.enable = true;
+
   programs.thunar = {
     enable = true;
     plugins = with pkgs; [

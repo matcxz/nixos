@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  programs.bash = {
+  programs.fish = {
     enable = true;
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --flake ~/nix#nixos";
@@ -15,8 +15,13 @@
     };
   };
 
-  programs.zoxide.enable = true;
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.eza.enable = true;
+
   programs.bat = {
     enable = true;
     config.paging = "never";

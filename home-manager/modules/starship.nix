@@ -3,7 +3,7 @@
 {
   programs.starship = {
     enable = true;
-    enableBashIntegration = true;
+    enableFishIntegration = true;
 
     settings = {
       format = "$username$directory$git_branch$python$git_status$character";
