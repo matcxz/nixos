@@ -6,7 +6,7 @@
     enableBashIntegration = true;
 
     settings = {
-    # format = "$username$directory$git_branch$python$git_status$character";
+      format = "$username$directory$git_branch$python$git_status$character";
       add_newline = false;
       scan_timeout = 18;
 
