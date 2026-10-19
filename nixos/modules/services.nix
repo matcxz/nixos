@@ -3,7 +3,6 @@
 {
   security.polkit.enable = true;
   services.dbus.enable = true;
-  services.ssh-agent.enable = true;
 
   services.keyd = {
     enable = true;
