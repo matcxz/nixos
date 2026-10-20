@@ -16,10 +16,6 @@
 
     interactiveShellInit = ''
       set fish_greeting
-
-      if set -q SSH_AUTH_SOCK; and not ssh-add -l >/dev/null 2>&1
-        ssh-add ~/.ssh/id_ed25519
-      end
     '';
   };
 
