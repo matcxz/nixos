@@ -14,6 +14,7 @@
     vim
     fastfetch
     pfetch
+    microfetch
     wget
     btop
     stow
