@@ -8,7 +8,6 @@
     mpv
     gparted
     keepassxc
-    obsidian
     virt-manager
 
     # CLI
