@@ -32,7 +32,7 @@
 
   virtualisation.libvirtd.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = false;
 
   system.stateVersion = "26.05";
 }
