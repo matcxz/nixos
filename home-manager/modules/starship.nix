@@ -8,7 +8,7 @@
     settings = {
       format = "$username$directory$git_branch$python$git_status$character";
       add_newline = false;
-      scan_timeout = 18;
+      scan_timeout = 40;
 
       character = {
         success_symbol = "[❯](bold green)";
