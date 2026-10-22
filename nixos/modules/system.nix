@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   networking.hostName = "nixos";
@@ -7,6 +7,13 @@
     "nix-command"
     "flakes"
   ];
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc.lib
+    zlib
+  ];
+
 
   networking.networkmanager.enable = true;
 
