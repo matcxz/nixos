@@ -63,6 +63,7 @@
     pipewire
     pulseaudio
     pamixer
+    pavucontrol
 
     # Programming
     gnumake
