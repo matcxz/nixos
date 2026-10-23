@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 let
   wallpaper = ../../wallpapers/2.jpg;
@@ -27,7 +27,7 @@ in
       terminal = "st";
       menu = "rofi -show drun";
 
-      keybindings = {
+      keybindings = lib.mkOptionDefault {
         XF86AudioRaiseVolume =
           "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && ${refreshI3Status}";
         XF86AudioLowerVolume =
