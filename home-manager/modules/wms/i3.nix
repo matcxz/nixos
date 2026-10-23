@@ -2,6 +2,19 @@
 
 let
   wallpaper = ../../wallpapers/2.jpg;
+  polybarStartup = pkgs.writeShellScript "polybar-startup" ''
+    attempt=0
+    while [ "$attempt" -lt 30 ]; do
+      if ${pkgs.pulseaudio}/bin/pactl info >/dev/null 2>&1; then
+        exec ${pkgs.polybar}/bin/polybar main
+      fi
+      ${pkgs.coreutils}/bin/sleep 1
+      attempt=$((attempt + 1))
+    done
+
+    echo "PipeWire PulseAudio did not become available; starting Polybar anyway" >&2
+    exec ${pkgs.polybar}/bin/polybar main
+  '';
 in
 {
   xsession.windowManager.i3 = {
@@ -45,7 +58,7 @@ in
           notification = false;
         }
         {
-          command = "polybar main";
+          command = "${polybarStartup}";
           always = false;
           notification = false;
         }
