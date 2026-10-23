@@ -2,6 +2,7 @@
 
 let
   wallpaper = ../../wallpapers/2.jpg;
+  refreshI3Status = "killall -SIGUSR1 i3status";
   polybarStartup = pkgs.writeShellScript "polybar-startup" ''
     attempt=0
     while [ "$attempt" -lt 30 ]; do
@@ -25,6 +26,17 @@ in
       modifier = "Mod4";
       terminal = "st";
       menu = "rofi -show drun";
+
+      keybindings = {
+        XF86AudioRaiseVolume =
+          "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && ${refreshI3Status}";
+        XF86AudioLowerVolume =
+          "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && ${refreshI3Status}";
+        XF86AudioMute =
+          "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && ${refreshI3Status}";
+        XF86AudioMicMute =
+          "exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && ${refreshI3Status}";
+      };
 
       gaps = {
         inner = 8;
