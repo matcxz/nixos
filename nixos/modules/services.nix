@@ -5,6 +5,8 @@
   services.dbus.enable = true;
   services.guix.enable = true;
 
+  networking.firewall.enable = false
+
   services.keyd = {
     enable = true;
     keyboards.default = {
@@ -15,7 +17,7 @@
 
   services.openssh = {
     enable = true;
-    openFirewall = true;
+    #openFirewall = true;
     settings = {
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;

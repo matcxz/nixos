@@ -15,6 +15,8 @@
 
   programs.fish.enable = true;
 
+  networking.firewall.enable = true;
+
   programs.thunar = {
     enable = true;
     plugins = with pkgs; [
